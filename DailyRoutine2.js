@@ -20,10 +20,13 @@ addBtn.addEventListener('click', function() {
         div.remove(div.removeChild);
     })
 
-    checkBtn.addEventListener('click',function() {
+    checkBtn.addEventListener('click', function() {
         div.style.textDecoration = 'line-through';
     })
-
+    
+    checkBtn.addEventListener('dblclick', function() {
+        div.style.textDecoration = 'none';
+    })
     
 })
 
