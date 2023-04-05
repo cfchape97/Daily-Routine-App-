@@ -1,34 +1,61 @@
 body {
-    background-color: wheat
+    background-color: #3A86FF
+}
+
+#mainContainer {
+    width: 400px;
+    height: 600px;
+    margin: auto;
+    background-color: #03045e;
+    border-radius: 10px;
 }
 
 h1 {
     text-align: center;
+    color: white;
 }
 
 .action {
-    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+
+#add {
+    background-color: #ff006E;
+    border-color: #ff006E;
+    border-width: 3px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: white;
+}
+#habit {
+    background-color: #03045e;
+    border-color: #ff006E;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    color: white;
 }
 
 .checkbox {
   width: 300px;
-  padding: 10px;
+  padding: 15px;
   border: 1px solid black;
-  margin: 5px auto;
-  background-color: lightyellow;
+  margin: 10px auto;
+  background-color: #FB5607;
   border-radius: 5px;
   text-decoration: none;
+  color: white;
 }
 
 .deleteBtn {
-    background-color: lightyellow;
-    border-color: black;
+    background-color: #FB5607;
+    border-color: #FB5607;
     float: right;
 }
 
 .checkBtn {
-    background-color: lightyellow;
-    border-color: black;
+    background-color: #FB5607 ;    
+    border-color: #FB5607;
     float: right;
 
 }
