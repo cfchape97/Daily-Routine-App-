@@ -1,10 +1,11 @@
-const body = document.querySelector('body');
+const mainContainer = document.querySelector('#mainContainer');
 const addBtn = document.querySelector('#add');
+
 addBtn.addEventListener('click', function() {
     const div = document.createElement('div');
     div.innerText = document.querySelector('#habit').value;
     div.setAttribute('class', 'checkbox');
-    body.appendChild(div);
+    mainContainer.appendChild(div);
 
     const checkBtn = document.createElement('button');
     checkBtn.setAttribute('class','fa-solid fa-check');
@@ -19,14 +20,14 @@ addBtn.addEventListener('click', function() {
     deleteBtn.addEventListener('click', function() {
         div.remove(div.removeChild);
     })
-
-    checkBtn.addEventListener('click', function() {
-        div.style.textDecoration = 'line-through';
-    })
     
+    checkBtn.addEventListener('click', function() {
+
+        div.style.textDecoration = 'line-through';
+        
+    })
     checkBtn.addEventListener('dblclick', function() {
         div.style.textDecoration = 'none';
     })
-    
-})
 
+})
